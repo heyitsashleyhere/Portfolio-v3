@@ -1,10 +1,13 @@
 import { motion } from "framer-motion"
+import { useContext } from "react";
+import { LandingContext } from "../../contexts/LandingContext";
 import './LandingPage.scss';
 
 export default function LandingPage() {
+    const { isTheme } = useContext(LandingContext)
     
     return (
-        <section className="LandingPage">
+        <section className={isTheme ? "LandingPage" : "LandingPage dark-theme"}>
             <h1>Hey there <span className="wave-emoji">👋</span>
             </h1>
             <p>it's <span className="name">Ashley Jiang</span></p>
@@ -29,8 +32,6 @@ export default function LandingPage() {
                                 transition={{ delay: 8, repeat: Infinity, repeatDelay: 8, duration: 2, times: [0, 0.5, 0.7, 1] }}>sweet tooth</motion.div>
                 </motion.div>
             </div>
- 
-
         </section>
     )
 }

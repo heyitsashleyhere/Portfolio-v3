@@ -15,6 +15,7 @@ import {ReactComponent as PhotoshopLogo} from '../../icons/photoshop.svg';
 import {ReactComponent as IndesignLogo} from '../../icons/indesign.svg';
 import './AboutMe.scss';
 import { motion } from "framer-motion";
+import Projects from '../Projects/Projects';
 
 export default function AboutMe() {
     
@@ -208,6 +209,8 @@ export default function AboutMe() {
             <p className="icon-text">InDesign</p>
         </motion.div>
       </div>
+
+      <Projects />
     </section>
   );
 }
