@@ -13,97 +13,144 @@ import {ReactComponent as GithubLogo} from '../../icons/github.svg';
 import {ReactComponent as IllustratorLogo} from '../../icons/illustrator.svg';
 import {ReactComponent as PhotoshopLogo} from '../../icons/photoshop.svg';
 import {ReactComponent as IndesignLogo} from '../../icons/indesign.svg';
-import './AboutMe.scss'
+import './AboutMe.scss';
+import { motion } from "framer-motion";
 
 export default function AboutMe() {
+    
+    const container = {
+        hidden: { opacity: 0 },
+        show: {
+          opacity: 1,
+          transition: {
+            staggerChildren: 0.5
+          }
+        }
+      }
+      
+    const item = {
+        hidden: { opacity: 0 , y: 5},
+        show: { opacity: 1, y: 0 }
+    }
+
   return (
     <section className="AboutMe">
-      <h2 className="about">ABOUT</h2>
+      <motion.div className="about" 
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.25, delay: 0.5}}>
+        <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>A</motion.div>
+        <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>B</motion.div>
+        <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>O</motion.div>
+        <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>U</motion.div>
+        <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>T</motion.div>
+      </motion.div>
       <div className="about-wrapper">
-          <p>My academic background is in Industrial Design where I have worked on a variety of projects across different sectors, including branding, market research, marketing, consumer packaging, children's toys, women accessories and clothing.</p>
+          <motion.p initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.25, delay: 1}}>My academic background is in Industrial Design where I have worked on a variety of projects across different sectors, including branding, market research, marketing, consumer packaging, children's toys, women accessories and clothing.</motion.p>
           
-          <p>Ah yes, like many people out there, I made the leap for a career switch. After moving to Germany, starting a family and COVID hitting the world, I started my web development journey in 2021.</p>
+          <motion.p initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.25, delay: 1}}>After moving to Germany, starting a family and COVID hitting the world, I started my web development journey in 2021.</motion.p>
           
-          <p>Born in the United States, I grew up traveling back and forth between Taipei, Los Angeles and Columbus. I am fluent in both Mandarin and English. And now adding German to that list (not counting programming languages here).</p>
+          <motion.p initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.25, delay: 1}}>Born in the United States, I grew up traveling back and forth between Taipei, Los Angeles and Columbus. I am fluent in both Mandarin and English. And now adding German to that list (not counting programming languages here).</motion.p>
       </div>
 
-      <h2 className="skills">SKILLS & TOOLS</h2>
-      <div className="skills-wrapper">
-        <div className="html-wrapper">
+      <motion.h2 className="skills"
+                 initial={{ opacity: 0 }}
+                 whileInView={{ opacity: 1 }}
+                 viewport={{ once: true }}
+                 transition={{ duration: 0.25, delay: 1}}>
+                     SKILLS & TOOLS
+      </motion.h2>
+
+      <motion.div className="skills-wrapper"
+                  variants={container}
+                  initial="hidden"
+                  animate="show">
+
+        <motion.div className="html-wrapper" variants={item} >
             <HtmlLogo className="html icon" />
             <p className="icon-text">HTML</p>
-        </div>
+        </motion.div>
 
-        <div className="css-wrapper">
+        <motion.div className="css-wrapper" variants={item} >
             <CssLogo className="css icon" />
             <p className="icon-text">CSS</p>
-        </div>
+        </motion.div>
         
-        <div className="sass-wrapper">
+        <motion.div className="sass-wrapper" variants={item} >
             <SassLogo className="sass icon" />
             <p className="icon-text">Sass</p>
-        </div>
+        </motion.div>
 
-        <div className="bootstrap-wrapper">
+        <motion.div className="bootstrap-wrapper" variants={item} >
             <BootstrapLogo className="bootstrap icon" fill="#7853B2" stroke="#7853B2"/>
             <p className="icon-text">Bootstrap</p>
-        </div>
+        </motion.div>
 
-        <div className="js-wrapper">
+        <motion.div className="js-wrapper" variants={item} >
             <JSLogo className="js icon" />
             <p className="icon-text">Javascript</p>
-        </div>
+        </motion.div>
 
-        <div className="react-wrapper">
+        <motion.div className="react-wrapper" variants={item} >
             <ReactLogo className="react icon" />
             <p className="icon-text">React</p>
-        </div>
+        </motion.div>
 
-        <div className="express-wrapper">
+        <motion.div className="express-wrapper" variants={item} >
             <ExpressLogo className="express icon" />
             <p className="icon-text">express</p>
-        </div>
+        </motion.div>
 
-        <div className="mongo-wrapper">
+        <motion.div className="mongo-wrapper" variants={item} >
             <MongoLogo className="mongo icon" />
             <p className="icon-text">MongoDB</p>
-        </div>
+        </motion.div>
 
-        <div className="postman-wrapper">
+        <motion.div className="postman-wrapper" variants={item} >
             <PostmanLogo className="postman icon" />
             <p className="icon-text">Postman</p>
-        </div>
+        </motion.div>
 
-        <div className="figma-wrapper">
+        <motion.div className="figma-wrapper" variants={item} >
             <FigmaLogo className="figma icon" />
             <p className="icon-text">figma</p>
-        </div>
+        </motion.div>
 
-        <div className="jira-wrapper">
+        <motion.div className="jira-wrapper" variants={item} >
             <JiraLogo className="jira icon" />
             <p className="icon-text">Jira</p>
-        </div>
+        </motion.div>
 
-        <div className="github-wrapper">
+        <motion.div className="github-wrapper" variants={item} >
             <GithubLogo className="github icon" />
             <p className="icon-text">GitHub</p>
-        </div>
+        </motion.div>
 
-        <div className="illustrator-wrapper">
+        <motion.div className="illustrator-wrapper" variants={item} >
             <IllustratorLogo className="illustrator icon" />
             <p className="icon-text">Illustrator</p>
-        </div>
+        </motion.div>
 
-        <div className="photoshop-wrapper">
+        <motion.div className="photoshop-wrapper" variants={item} >
             <PhotoshopLogo className="photoshop icon" />
             <p className="icon-text">Photoshop</p>
-        </div>
+        </motion.div>
 
-        <div className="indesign-wrapper">
+        <motion.div className="indesign-wrapper" variants={item} >
             <IndesignLogo className="indesign icon" />
             <p className="icon-text">InDesign</p>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
