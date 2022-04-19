@@ -15,10 +15,12 @@ import {ReactComponent as PhotoshopLogo} from '../../icons/photoshop.svg';
 import {ReactComponent as IndesignLogo} from '../../icons/indesign.svg';
 import './AboutMe.scss';
 import { motion } from "framer-motion";
+import { useContext } from "react";
+import { LandingContext } from '../../contexts/LandingContext';
 import Projects from '../Projects/Projects';
 
 export default function AboutMe() {
-    
+    const { isTheme } = useContext(LandingContext)
     // const container = {
     //     hidden: { opacity: 0 },
     //     show: {
@@ -35,7 +37,7 @@ export default function AboutMe() {
     // }
 
   return (
-    <section className="AboutMe">
+    <section className={isTheme? "AboutMe" : "AboutMe dark-theme"}>
       <motion.div className="about" 
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}

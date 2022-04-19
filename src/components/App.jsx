@@ -2,13 +2,14 @@ import AboutMe from "./AboutMe/AboutMe.jsx";
 import LandingPage from "./LandingPage/LandingPage.jsx";
 import { useContext } from "react";
 import { LandingContext } from "../contexts/LandingContext.jsx";
+import './App.scss';
 
 
 export default function App() {
     const { isTheme, setIsTheme } = useContext(LandingContext)
 
     return (
-        <section className="App">
+        <section className={isTheme ? "App" : "dark-theme"}>
             <header>
                 <span className="theme-switch"
                       onClick={() => setIsTheme(!isTheme)}>

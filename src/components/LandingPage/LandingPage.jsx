@@ -1,13 +1,10 @@
 import { motion } from "framer-motion"
-import { useContext } from "react";
-import { LandingContext } from "../../contexts/LandingContext";
 import './LandingPage.scss';
 
 export default function LandingPage() {
-    const { isTheme } = useContext(LandingContext)
     
     return (
-        <section className={isTheme ? "LandingPage" : "LandingPage dark-theme"}>
+        <section className="LandingPage">
             <h1>Hey there <span className="wave-emoji">👋</span>
             </h1>
             <p>it's <span className="name">Ashley Jiang</span></p>
