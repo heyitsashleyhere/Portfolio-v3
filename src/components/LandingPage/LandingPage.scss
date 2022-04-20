@@ -1,9 +1,16 @@
 .LandingPage {
-    height: 95vh;
+    height: 88vh;
     padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    h1 {
+        font-size: 2em;
+    }
+    p,
+    .statement {
+        font-size: 1.5em;
+    }
     .wave-emoji {
         display: inline-block;
         animation: wiggle 2s infinite;

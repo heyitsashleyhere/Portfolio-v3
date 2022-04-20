@@ -7,7 +7,7 @@ export default function LandingPage() {
         <section className="LandingPage">
             <h1>Hey there <span className="wave-emoji">👋</span>
             </h1>
-            <p>it's <span className="name">Ashley Jiang</span></p>
+            <p>it's <span className="name"><strong>Ashley Jiang</strong></span></p>
             
             <div className="statement">
                 <div>I am a</div>

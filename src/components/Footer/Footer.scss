@@ -1,0 +1,55 @@
+footer {
+    text-align: center;
+    margin: 1em 0;
+
+    .icons-wrapper {
+        a {
+            margin: 0 1em;
+            .social-icon {
+                width: 2em;
+                &:hover {
+                    transform: scale(1.2);
+                }
+                &:active {
+                    transform: scale(0.9);
+                }
+            }
+
+            .email {
+                &:hover {
+                    fill: #f15bb5;
+                }
+            }
+            
+            .twitter {
+                &:hover {
+                    fill: #00bbf9;
+                }
+            }        
+            
+            .instagram {
+                &:hover {
+                    fill: #fb7107;
+                }
+            } 
+
+            .github {
+                &:hover {
+                    fill: #9b5de5;
+                }
+            } 
+
+            .linkedin {
+                &:hover {
+                    fill: #00f5d4;
+                }
+            } 
+
+        }
+    }
+
+    p {
+        font-size: 0.8em;
+        margin: 0.4em 0 0 0;
+    }
+}

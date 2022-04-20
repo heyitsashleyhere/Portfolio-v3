@@ -1,3 +1,5 @@
+import { useContext } from "react";
+// Icons:
 import {ReactComponent as HtmlLogo} from '../../icons/html.svg';
 import {ReactComponent as CssLogo} from '../../icons/css3.svg';
 import {ReactComponent as SassLogo} from '../../icons/sass.svg';
@@ -13,11 +15,11 @@ import {ReactComponent as GithubLogo} from '../../icons/github.svg';
 import {ReactComponent as IllustratorLogo} from '../../icons/illustrator.svg';
 import {ReactComponent as PhotoshopLogo} from '../../icons/photoshop.svg';
 import {ReactComponent as IndesignLogo} from '../../icons/indesign.svg';
+// Styles & Effects
 import './AboutMe.scss';
 import { motion } from "framer-motion";
-import { useContext } from "react";
+// Context
 import { LandingContext } from '../../contexts/LandingContext';
-import Projects from '../Projects/Projects';
 
 export default function AboutMe() {
     const { isTheme } = useContext(LandingContext)
@@ -211,8 +213,6 @@ export default function AboutMe() {
             <p className="icon-text">InDesign</p>
         </motion.div>
       </div>
-
-      <Projects />
     </section>
   );
 }
