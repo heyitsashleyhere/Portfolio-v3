@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/Portfolio-v3/static/css/main.7a80e5be.css",
+    "main.js": "/Portfolio-v3/static/js/main.50117e6c.js",
+    "static/media/Ashley_Jiang_CV.pdf": "/Portfolio-v3/static/media/Ashley_Jiang_CV.1a6a10f27505861f0e5b.pdf",
+    "static/media/mongodb.svg": "/Portfolio-v3/static/media/mongodb.452bfc77ef397456ac6393170227c033.svg",
+    "static/media/sass.svg": "/Portfolio-v3/static/media/sass.8aa78a8393470431c8036541f0708bd7.svg",
+    "static/media/postman.svg": "/Portfolio-v3/static/media/postman.5c8723ae695b8f4fba6e89f4471ca76e.svg",
+    "static/media/github-square-brands.svg": "/Portfolio-v3/static/media/github-square-brands.bdd05eb0a44d2eff01dd26eaa0b307bb.svg",
+    "static/media/react.svg": "/Portfolio-v3/static/media/react.0d41cf4c287a0775a11334efab118c58.svg",
+    "static/media/photoshop.svg": "/Portfolio-v3/static/media/photoshop.4f1767f71b88ef419d64ef37c01007cf.svg",
+    "static/media/instagram-brands.svg": "/Portfolio-v3/static/media/instagram-brands.813fd06b51b26e101fbbdde32e64af13.svg",
+    "index.html": "/Portfolio-v3/index.html",
+    "static/media/github-alt-brands.svg": "/Portfolio-v3/static/media/github-alt-brands.bb9710241985248be847cb68a62e7613.svg",
+    "static/media/twitter-brands.svg": "/Portfolio-v3/static/media/twitter-brands.7b0966c673ac146ae16dfeaa6ecc2eb1.svg",
+    "static/media/bootstrap-brands.svg": "/Portfolio-v3/static/media/bootstrap-brands.603fe731867601ffd1dc5a66e43455de.svg",
+    "static/media/express.svg": "/Portfolio-v3/static/media/express.17d6aefdd7235ab2cf8881c1b03ad312.svg",
+    "static/media/indesign.svg": "/Portfolio-v3/static/media/indesign.26568970a9c32aea0b83fbe99cfa1524.svg",
+    "static/media/illustrator.svg": "/Portfolio-v3/static/media/illustrator.394541e37200f472683ff2d96818b72d.svg",
+    "static/media/javascript.svg": "/Portfolio-v3/static/media/javascript.de4c2594613e34b15666206bbede7327.svg",
+    "static/media/github.svg": "/Portfolio-v3/static/media/github.95ad9234e1509d5c93ffe0a9f7eb217a.svg",
+    "static/media/css3.svg": "/Portfolio-v3/static/media/css3.9cecabbf6ce67609c48bc4f280a11002.svg",
+    "static/media/linkedin-brands.svg": "/Portfolio-v3/static/media/linkedin-brands.f2f7d420f8ec14109e65abad03b5f32c.svg",
+    "static/media/paper-plane-solid.svg": "/Portfolio-v3/static/media/paper-plane-solid.30ff3fdc30a26072efeb7f2bf8bd3590.svg",
+    "static/media/square-arrow-up-right-solid.svg": "/Portfolio-v3/static/media/square-arrow-up-right-solid.d61dad748cf07e3a87887c318c7f20c3.svg",
+    "static/media/figma.svg": "/Portfolio-v3/static/media/figma.7ec53a4a5c6c13b7d459f072fc73adf1.svg",
+    "static/media/jira.svg": "/Portfolio-v3/static/media/jira.4e6048fe9d07a5033bab028e103ab7e5.svg",
+    "static/media/html.svg": "/Portfolio-v3/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg",
+    "main.7a80e5be.css.map": "/Portfolio-v3/static/css/main.7a80e5be.css.map",
+    "main.50117e6c.js.map": "/Portfolio-v3/static/js/main.50117e6c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a80e5be.css",
+    "static/js/main.50117e6c.js"
+  ]
+}
