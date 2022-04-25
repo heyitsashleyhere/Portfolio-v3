@@ -10,6 +10,7 @@ import { LandingContext } from "../contexts/LandingContext.jsx";
 // Styles & Effects
 import './App.scss';
 import { motion } from "framer-motion";
+import pdf from "../resume/Ashley_Jiang_CV.pdf";
 
 
 
@@ -23,7 +24,10 @@ export default function App() {
                      whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}
                      onClick={() => setIsTheme(!isTheme)}>
                           {isTheme ? '🐵' : '🙈 '}</motion.div> 
-                <button>RESUME</button>
+                <a href={pdf}
+                   target="_blank"
+                   rel="noreferrer" 
+                   className={isTheme ? "light-btn" : "dark-btn"}>RESUME</a>
             </header>
 
             <LandingPage />

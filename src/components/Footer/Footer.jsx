@@ -6,7 +6,7 @@ import {ReactComponent as Instagram} from '../../icons/instagram-brands.svg'
 import {ReactComponent as GitHub} from '../../icons/github-alt-brands.svg'
 import {ReactComponent as Linkedin} from '../../icons/linkedin-brands.svg'
 // Custom Hooks
-import useWindowDimensions from '../../customHooks/useWindowDimensions.jsx';
+// import useWindowDimensions from '../../customHooks/useWindowDimensions.jsx';
 // Context
 import { LandingContext } from '../../contexts/LandingContext';
 // Styles & Effects
@@ -16,7 +16,7 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
     const { isTheme } = useContext(LandingContext)
-    const { height, width } = useWindowDimensions();
+    // const { height, width } = useWindowDimensions();
 
     return (
         <footer>

@@ -1,18 +1,38 @@
 .Projects {
     padding: 2em 1em 0 1em;
+
+    @media screen and (min-width: 768px) {
+        padding: 10em 3em 3em 3em;
+    }
+
     h2 {
         font-size: 3.9em;
         font-weight: 600;
         margin-bottom: -0.2em;
+        @media screen and (min-width: 768px) {
+            font-size: 5em;
+            margin-bottom: 1em;
+        }
     }
 
     .project-wrapper {
         padding: 1em 0;
+        @media screen and (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 4fr 6fr;
+            grid-template-rows: repeat(4, 1fr);
+        }
         .title-wrapper {
             margin-top: 1em;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @media screen and (min-width: 768px) {
+                justify-content: flex-start;
+                grid-area: 1 / 1 / 2 / 2;
+                margin-top: 0;
+                align-items: flex-start;
+            }
 
             h4 {
                 font-size: 1.6em;
@@ -44,6 +64,11 @@
         p {
             text-align: justify;
 
+            @media screen and (min-width: 768px) {
+                grid-area: 2 / 1 / 4 / 2;
+                padding-right: 3em;
+            }
+
             .p-link {
                 display: inline-block;
                 color: #00bbf9;
@@ -60,9 +85,16 @@
         img {
             width: 100%;
             margin-top: 0.4em;
+            @media screen and (min-width: 768px) {
+                grid-area: 1 / 2 / 4 / 3;
+            }
         }
 
         .tools-list {
+            @media screen and (min-width: 768px) {
+                grid-area: 4 / 1 / 5 / 3;
+                align-items: start;
+            }
             list-style: none;
             display: flex;
             flex-wrap: wrap;
@@ -73,6 +105,11 @@
                 border-radius: 1em;
                 padding: 0 0.4em;
                 margin: 0.4em 0.4em 0 0;
+
+                &:hover {
+                    color: whitesmoke;
+                    background-color: #9b5de5;
+                }
             }
         }
     }

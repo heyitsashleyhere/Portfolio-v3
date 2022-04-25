@@ -17,13 +17,13 @@ export default function Projects() {
             <motion.h2 initial={{ opacity: 0 }}
                        whileInView={{ opacity: 1 }}
                        viewport={{ once: true }}
-                       transition={{ delay: 2.55}}>PROJECTS</motion.h2>
+                       transition={{ delay: 2}}>PROJECTS</motion.h2>
             <div className="project-wrapper">
                 <motion.section className="title-wrapper"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 2.65}}>      
+                transition={{ delay: 2.05}}>      
                     <h4>ICT Team Project</h4>
 
                     <div className="links">
@@ -39,45 +39,45 @@ export default function Projects() {
                 <motion.p initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 2.7}}>Ideas Come Together is a 3-4 days SPA team project. Users can register, login, comment, search , create private or public posts with text and images.</motion.p>
+                transition={{ delay: 2.1}}>Ideas Come Together is a 3-4 days SPA team project. Users can register, login, comment, search , create private or public posts with text and images.</motion.p>
 
                 <motion.img src={process.env.PUBLIC_URL + "/images/ict.png"} alt="ict preview" 
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 2.75}}/>
+                transition={{ delay: 2.15}}/>
 
                 <ul className="tools-list">
                     <motion.li
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 2.8}}>React</motion.li>
+                    transition={{ delay: 2.2}}>React</motion.li>
                     <motion.li
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 2.85}}>React Router</motion.li>
+                    transition={{ delay: 2.25}}>React Router</motion.li>
                     <motion.li
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 2.9}}>Framer Motion</motion.li>
+                    transition={{ delay: 2.3}}>Framer Motion</motion.li>
                     <motion.li
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 3}}>Sass</motion.li>
+                    transition={{ delay: 2.35}}>Sass</motion.li>
                     <motion.li
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 3.05}}>Excalidraw</motion.li>
+                    transition={{ delay: 2.4}}>Excalidraw</motion.li>
                     <motion.li
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 3.1}}>Figma</motion.li>
+                    transition={{ delay: 2.45}}>Figma</motion.li>
                 </ul>
             </div>
 
@@ -86,7 +86,7 @@ export default function Projects() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 3}}>
+                transition={{ delay: 2.5}}>
                     <h4>Weather App</h4>
                     
                     <div className="links">
@@ -102,12 +102,12 @@ export default function Projects() {
                 <motion.p initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 3.05}}>2-3 day responsive frontend challenge from <motion.div
+                transition={{ delay: 2.55}}>2-3 day responsive frontend challenge from <motion.div
                 className='p-link' 
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 3.05}}
+                transition={{ delay: 2.55}}
                 href="https://devchallenges.io/" rel="noreferrer" target="_blank"
                 >devChallenges</motion.div>.</motion.p>
                 
@@ -115,29 +115,29 @@ export default function Projects() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 3.05}} />
+                transition={{ delay: 2.6}} />
                 
                 <ul className="tools-list">
                     <motion.li
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 3.1}}>React</motion.li>
+                    transition={{ delay: 2.65}}>React</motion.li>
                     <motion.li
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 3.15}}>OpenWeatherMap API</motion.li>
+                    transition={{ delay: 2.7}}>OpenWeatherMap API</motion.li>
                     <motion.li
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 3.2}}>Material Design Icons</motion.li>
+                    transition={{ delay: 2.75}}>Material Design Icons</motion.li>
                     <motion.li
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 3.25}}>GitHub Pages</motion.li>
+                    transition={{ delay: 2.8}}>GitHub Pages</motion.li>
                 </ul>
 
             </div>

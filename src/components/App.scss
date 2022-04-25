@@ -14,8 +14,44 @@ header {
     padding: 0.3em 0.3em 0 0;
 
     .theme-switch {
-        margin-right: 0.5em;
+        margin-right: 0.2em;
+        padding-top: 0.2em;
         font-size: 1.6em;
         cursor: pointer;
+
+        @media screen and (min-width: 768px) {
+            font-size: 2.6em;
+        }
+    }
+
+    a {
+        border: 1px solid #9b5de5;
+        background-color: #9a5de588;
+        border-radius: 2em;
+        padding: 0 0.6em;
+        margin: 0.5em 1em 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        @media screen and (min-width: 768px) {
+            font-size: 1.6em;
+        }
+
+        &:hover {
+            background-color: #9b5de5;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+    .light-btn {
+        color: #282828;
+    }
+    .dark-btn {
+        color: whitesmoke;
     }
 }
