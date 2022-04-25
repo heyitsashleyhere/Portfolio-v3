@@ -1,6 +1,49 @@
 .Projects {
     padding: 0 1em;
     h2 {
-        font-size: 1.75em;
+        font-size: 3.9em;
+        font-weight: 600;
+    }
+
+    .project-wrapper {
+        img {
+            width: 100%;
+        }
+
+        .text-wrapper {
+            h4 {
+                font-size: 1.6em;
+                text-align: right;
+            }
+            .tools {
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 0.8em;
+                color: #9b5de5;
+                margin: 1em 0;
+                li {
+                    margin-right: 0.6em;
+                }
+            }
+        }
+
+        .links {
+            a {
+                display: inline-block;
+                .link-icon {
+                    width: 2.2em;
+                    height: 2.2em;
+                    &:hover {
+                        transform: scale(1.2);
+                        fill: #9b5de5;
+                    }
+                    &:active {
+                        transform: scale(0.9);
+                        fill: #9b5de5;
+                    }   
+                }
+            }
+        }
     }
 }

@@ -137,7 +137,7 @@ export default function AboutMe() {
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
                     transition={{ duration: 0.25, delay: 2.75 }} >
-            <ExpressLogo className="express icon" />
+            <ExpressLogo className="express icon" fill={isTheme? "black" : "#FFFFFF"} stroke={isTheme? "black" : "#FFFFFF"}/>
             <p className="icon-text">express</p>
         </motion.div>
 
@@ -182,7 +182,7 @@ export default function AboutMe() {
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
                     transition={{ duration: 0.25, delay: 4 }} >
-            <GithubLogo className="github icon" />
+            <GithubLogo className="github icon" fill={isTheme? "black" : "#FFFFFF"}/>
             <p className="icon-text">GitHub</p>
         </motion.div>
 
