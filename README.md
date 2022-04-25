@@ -38,6 +38,10 @@ Built a simple personal website to showcase my growth as a web-developer from th
    npm start
    ```
 
+## 💡 Inspirations
+- [Brittany Chiang](https://github.com/bchiang7/v4)
+- [Ivo Serra](https://github.com/ivoserra/portfolio)
+
 ## 📲 Contact
 
 - GitHub [@heyitsashleyhere](https://github.com/heyitsashleyhere)
