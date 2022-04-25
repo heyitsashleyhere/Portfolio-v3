@@ -4,7 +4,11 @@ import './LandingPage.scss';
 export default function LandingPage() {
     
     return (
-        <section className="LandingPage">
+        <motion.section className="LandingPage"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.5}}>
             <h1>Hey there <span className="wave-emoji">👋</span>
             </h1>
             <p>it's <span className="name"><strong>Ashley Jiang</strong></span></p>
@@ -29,6 +33,6 @@ export default function LandingPage() {
                                 transition={{ delay: 8, repeat: Infinity, repeatDelay: 8, duration: 2, times: [0, 0.5, 0.7, 1] }}>sweet tooth</motion.div>
                 </motion.div>
             </div>
-        </section>
+        </motion.section>
     )
 }

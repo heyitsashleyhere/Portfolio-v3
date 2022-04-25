@@ -1,0 +1,30 @@
+.Scroll {
+    position: fixed;
+    bottom: 2em;
+    right: 0.3em;
+    button {
+        border: none;
+        background-color: rgba(245, 245, 245, 0);
+        font-size: 2em;
+
+        &:hover {
+            animation:bounce 0.6s infinite;
+            animation-timing-function: ease;
+            @keyframes bounce {
+                0%   { transform: translateY(0); }
+                50%  { transform: translateY(-10px); }
+                100% { transform: translateY(0); }
+              }
+        }
+
+        &:active {
+            transform: translateY(-10px);
+        }
+    }
+    .hide {
+        opacity: 0;
+    }
+    .show {
+        opacity: 1;
+    }
+}

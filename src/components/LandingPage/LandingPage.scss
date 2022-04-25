@@ -5,11 +5,29 @@
     flex-direction: column;
     justify-content: center;
     h1 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     p,
     .statement {
         font-size: 1.5em;
+        .noun {
+            .webdev {
+                color: #00bbf9;
+            }
+            .mother {
+                color: #fb7107;
+            }
+            .catlover {
+                color: #9b5de5;
+            }
+            .problemsolver {
+                color: #00f5d4;
+            }
+            .sweettooth {
+                color: #f15bb5;
+            }
+            
+        }
     }
     .wave-emoji {
         display: inline-block;

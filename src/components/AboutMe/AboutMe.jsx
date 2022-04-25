@@ -23,20 +23,6 @@ import { LandingContext } from '../../contexts/LandingContext';
 
 export default function AboutMe() {
     const { isTheme } = useContext(LandingContext)
-    // const container = {
-    //     hidden: { opacity: 0 },
-    //     show: {
-    //       opacity: 1,
-    //       transition: {
-    //         staggerChildren: 0.5
-    //       }
-    //     }
-    //   }
-      
-    // const item = {
-    //     hidden: { opacity: 0 , y: 5},
-    //     show: { opacity: 1, y: 0 }
-    // }
 
   return (
     <section className={isTheme? "AboutMe" : "AboutMe dark-theme"}>
@@ -44,7 +30,7 @@ export default function AboutMe() {
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.25, delay: 0.5}}>
+                  transition={{ duration: 0.25, delay: 0.65}}>
         <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>A</motion.div>
         <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>B</motion.div>
         <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>O</motion.div>
@@ -60,12 +46,12 @@ export default function AboutMe() {
           <motion.p initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 1}}>After moving to Germany, starting a family and COVID hitting the world, I started my web development journey in 2021.</motion.p>
+                    transition={{ delay: 0.85}}>After moving to Germany, starting a family and COVID hitting the world, I started my web development journey in 2021.</motion.p>
           
           <motion.p initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 1.25}}>Born in the United States, I grew up traveling back and forth between Taipei, Los Angeles and Columbus. I am fluent in both Mandarin and English. And now adding German to that list (not counting programming languages here).</motion.p>
+                    transition={{ delay: 0.95}}>Born in the United States, I grew up traveling back and forth between Taipei, Los Angeles and Columbus. I am fluent in both Mandarin and English. And now adding German to that list (not counting programming languages here).</motion.p>
       </div>
 
       <motion.h2 className="skills"
@@ -82,7 +68,7 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 1.25 }} >
+                    transition={{ duration: 0.25, delay: 1.15 }} >
             <HtmlLogo className="html icon" />
             <p className="icon-text">HTML</p>
         </motion.div>
@@ -91,7 +77,7 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 1.5 }} >
+                    transition={{ duration: 0.25, delay: 1.25 }} >
             <CssLogo className="css icon" />
             <p className="icon-text">CSS</p>
         </motion.div>
@@ -100,7 +86,7 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 1.75 }} >
+                    transition={{ duration: 0.25, delay: 1.35 }} >
             <SassLogo className="sass icon" />
             <p className="icon-text">Sass</p>
         </motion.div>
@@ -109,7 +95,7 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 2 }} >
+                    transition={{ duration: 0.25, delay: 1.45 }} >
             <BootstrapLogo className="bootstrap icon" fill="#7853B2" stroke="#7853B2"/>
             <p className="icon-text">Bootstrap</p>
         </motion.div>
@@ -118,7 +104,7 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 2.25 }} >
+                    transition={{ duration: 0.25, delay: 1.55 }} >
             <JSLogo className="js icon" />
             <p className="icon-text">Javascript</p>
         </motion.div>
@@ -127,7 +113,7 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 2.5 }} >
+                    transition={{ duration: 0.25, delay: 1.65 }} >
             <ReactLogo className="react icon" />
             <p className="icon-text">React</p>
         </motion.div>
@@ -136,7 +122,7 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 2.75 }} >
+                    transition={{ duration: 0.25, delay: 1.75 }} >
             <ExpressLogo className="express icon" fill={isTheme? "black" : "#FFFFFF"} stroke={isTheme? "black" : "#FFFFFF"}/>
             <p className="icon-text">express</p>
         </motion.div>
@@ -145,7 +131,7 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 3 }} >
+                    transition={{ duration: 0.25, delay: 1.85 }} >
             <MongoLogo className="mongo icon" />
             <p className="icon-text">MongoDB</p>
         </motion.div>
@@ -154,7 +140,7 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 3.25 }} >
+                    transition={{ duration: 0.25, delay: 1.95 }} >
             <PostmanLogo className="postman icon" />
             <p className="icon-text">Postman</p>
         </motion.div>
@@ -163,7 +149,7 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 3.5 }} >
+                    transition={{ duration: 0.25, delay: 2.05 }} >
             <FigmaLogo className="figma icon" />
             <p className="icon-text">figma</p>
         </motion.div>
@@ -172,7 +158,7 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 3.75 }} >
+                    transition={{ duration: 0.25, delay: 2.15 }} >
             <JiraLogo className="jira icon" />
             <p className="icon-text">Jira</p>
         </motion.div>
@@ -181,7 +167,7 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 4 }} >
+                    transition={{ duration: 0.25, delay: 2.25 }} >
             <GithubLogo className="github icon" fill={isTheme? "black" : "#FFFFFF"}/>
             <p className="icon-text">GitHub</p>
         </motion.div>
@@ -190,7 +176,7 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 4.25 }} >
+                    transition={{ duration: 0.25, delay: 2.35 }} >
             <IllustratorLogo className="illustrator icon" />
             <p className="icon-text">Illustrator</p>
         </motion.div>
@@ -199,7 +185,7 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 4.5 }} >
+                    transition={{ duration: 0.25, delay: 2.45 }} >
             <PhotoshopLogo className="photoshop icon" />
             <p className="icon-text">Photoshop</p>
         </motion.div>
@@ -208,7 +194,7 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 4.75 }} >
+                    transition={{ duration: 0.25, delay: 2.55 }} >
             <IndesignLogo className="indesign icon" />
             <p className="icon-text">InDesign</p>
         </motion.div>

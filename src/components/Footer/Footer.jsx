@@ -11,6 +11,7 @@ import useWindowDimensions from '../../customHooks/useWindowDimensions.jsx';
 import { LandingContext } from '../../contexts/LandingContext';
 // Styles & Effects
 import './Footer.scss'
+import { motion } from "framer-motion";
 
 
 export default function Footer() {
@@ -19,29 +20,52 @@ export default function Footer() {
 
     return (
         <footer>
-
             <div className="icons-wrapper">
-                <a href="mailto:ashleyjiang4@gmail.com">
+                <motion.a href="mailto:ashleyjiang4@gmail.com"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.25, delay: 2 }}>
                     <Email className='social-icon email' fill={isTheme? "#282828" : "#FFFFFF"} stroke={isTheme? "#282828" : "#FFFFFF"}/>
-                </a>
-                <a href="https://twitter.com/ashhhleyhere" rel="noreferrer" target="_blank">
+                </motion.a>
+                <motion.a href="https://twitter.com/ashhhleyhere" rel="noreferrer" target="_blank"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.25, delay: 2.05 }}>
                     <Twitter className='social-icon twitter' fill={isTheme? "#282828" : "#FFFFFF"} stroke={isTheme? "#282828" : "#FFFFFF"}/>
-                </a>
+                </motion.a>
                 
-                <a href="https://www.instagram.com/heyitsjustashleyhere/" rel="noreferrer" target="_blank">
+                <motion.a href="https://www.instagram.com/heyitsjustashleyhere/" rel="noreferrer" target="_blank"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.25, delay: 2.1 }}>
                     <Instagram className='social-icon instagram' fill={isTheme? "#282828" : "#FFFFFF"} stroke={isTheme? "#282828" : "#FFFFFF"}/>
-                </a>
+                </motion.a>
 
-                <a href="https://github.com/heyitsashleyhere" rel="noreferrer" target="_blank">
+                <motion.a href="https://github.com/heyitsashleyhere" rel="noreferrer" target="_blank"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.25, delay: 2.15 }}>
                     <GitHub className='social-icon github' fill={isTheme? "#282828" : "#FFFFFF"} stroke={isTheme? "#282828" : "#FFFFFF"}/>
-                </a>
+                </motion.a>
                 
-                <a href="https://www.linkedin.com/in/ashley-jiang-b623a9ab/" rel="noreferrer" target="_blank">
+                <motion.a href="https://www.linkedin.com/in/ashley-jiang-b623a9ab/" rel="noreferrer" target="_blank"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.25, delay: 2.2 }}>
                     <Linkedin className='social-icon linkedin' fill={isTheme? "#282828" : "#FFFFFF"} stroke={isTheme? "#282828" : "#FFFFFF"}/>
-                </a>      
+                </motion.a>      
             </div>
 
-            <p>Ashley Jiang &copy; 2022</p>
+            <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1 , y: 0}}
+            viewport={{ once: true }}
+            transition={{ duration: 0.25, delay: 2.25 }}>Ashley Jiang &copy; 2022</motion.p>
         </footer>
     )
 }

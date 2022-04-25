@@ -4,6 +4,7 @@ import AboutMe from "./AboutMe/AboutMe.jsx";
 import LandingPage from "./LandingPage/LandingPage.jsx";
 import Projects from "./Projects/Projects.jsx"
 import Footer from "./Footer/Footer.jsx";
+import ScrollToTop from "./Scroll/Scroll.jsx"
 // Context
 import { LandingContext } from "../contexts/LandingContext.jsx";
 // Styles & Effects
@@ -29,6 +30,7 @@ export default function App() {
             <AboutMe />
             <Projects />
             <Footer />
+            <ScrollToTop />
         </section>
     )
 }
