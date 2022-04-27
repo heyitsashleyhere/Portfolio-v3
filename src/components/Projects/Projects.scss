@@ -2,7 +2,11 @@
     padding: 2em 1em 0 1em;
 
     @media screen and (min-width: 768px) {
-        padding: 10em 3em 3em 3em;
+        padding: 10em 5em 3em 5em;
+    }
+
+    @media screen and (min-width: 1020px) {
+        padding: 8em;
     }
 
     h2 {
@@ -13,14 +17,19 @@
             font-size: 5em;
             margin-bottom: 1em;
         }
+        @media screen and (min-width: 1020px) {
+            margin-bottom: 0.2em;
+        }
     }
 
     .project-wrapper {
         padding: 1em 0;
         @media screen and (min-width: 768px) {
             display: grid;
-            grid-template-columns: 4fr 6fr;
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: 6fr 4fr;
+            grid-template-rows: repeat(3, auto);
+            grid-column-gap: 2em;
+            margin-bottom: 3em;
         }
         .title-wrapper {
             margin-top: 1em;
@@ -28,16 +37,26 @@
             justify-content: space-between;
             align-items: center;
             @media screen and (min-width: 768px) {
-                justify-content: flex-start;
-                grid-area: 1 / 1 / 2 / 2;
-                margin-top: 0;
+                grid-area: 1 / 2 / 2 / 3;
                 align-items: flex-start;
+                font-size: 1em;
+                margin-top: -0.2em;
+            }
+            @media screen and (min-width: 1020px) {
+                font-size: 1.6em;
             }
 
             h4 {
                 font-size: 1.6em;
                 font-weight: 500;
                 color: #9b5de5;
+
+                @media screen and (min-width: 768px) {
+                    width: 60%;
+                }
+                @media screen and (min-width: 1020px) {
+                    width: 150%;
+                }
             }
 
             .links {
@@ -47,6 +66,10 @@
                         width: 2em;
                         height: 2em;
                         fill: #9b5de5;
+                        @media screen and (min-width: 768px) {
+                            width: 2.6em;
+                            height: 2.6em;
+                        }
                         &:hover {
                             transform: scale(1.2);
                             fill: #00f5d4;
@@ -65,8 +88,7 @@
             text-align: justify;
 
             @media screen and (min-width: 768px) {
-                grid-area: 2 / 1 / 4 / 2;
-                padding-right: 3em;
+                grid-area: 2 / 2 / 3 / 3;
             }
 
             .p-link {
@@ -86,15 +108,11 @@
             width: 100%;
             margin-top: 0.4em;
             @media screen and (min-width: 768px) {
-                grid-area: 1 / 2 / 4 / 3;
+                grid-area: 1 / 1 / 4 / 2;
             }
         }
 
         .tools-list {
-            @media screen and (min-width: 768px) {
-                grid-area: 4 / 1 / 5 / 3;
-                align-items: start;
-            }
             list-style: none;
             display: flex;
             flex-wrap: wrap;
@@ -111,6 +129,129 @@
                     background-color: #9b5de5;
                 }
             }
+            @media screen and (min-width: 768px) {
+                grid-area: 3 / 2 / 4 / 3;
+                align-items: end;
+                justify-content: flex-end;
+                padding-top: 1em;
+            }
+        }
+    }
+}
+
+.odd-project-wrapper {
+    padding: 1em 0;
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 2em;
+        margin-bottom: 3em;
+
+    }
+    .title-wrapper {
+        margin-top: 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (min-width: 768px) {
+            grid-area: 1 / 1 / 2 / 2;
+            align-items: flex-start;
+            font-size: 1em;
+            margin-top: -0.2em;
+        }
+        @media screen and (min-width: 1020px) {
+            font-size: 1.6em;
+        }
+
+        h4 {
+            font-size: 1.6em;
+            font-weight: 500;
+            color: #9b5de5;
+
+            @media screen and (min-width: 768px) {
+                width: 60%;
+            }
+            @media screen and (min-width: 1020px) {
+                width: 150%;
+            }
+        }
+
+        .links {
+            a {
+                display: inline-block;
+                .link-icon {
+                    width: 2em;
+                    height: 2em;
+                    fill: #9b5de5;
+                    @media screen and (min-width: 768px) {
+                        width: 2.6em;
+                        height: 2.6em;
+                    }
+                    &:hover {
+                        transform: scale(1.2);
+                        fill: #00f5d4;
+                    }
+                    &:active {
+                        transform: scale(0.9);
+                        fill: #00f5d4;
+                    }   
+                }
+            }
+        }
+
+    }
+
+    p {
+        text-align: justify;
+
+        @media screen and (min-width: 768px) {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .p-link {
+            display: inline-block;
+            color: #00bbf9;
+            &:hover,
+            &:visited,
+            &:active {
+                text-decoration: none;
+                background-color: #00bbf9;
+                color: whitesmoke;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        margin-top: 0.4em;
+        @media screen and (min-width: 768px) {
+            grid-area: 1 / 2 / 4 / 3; 
+        }
+    }
+
+    .tools-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0.8em;
+        color: #9b5de5;
+        li {
+            border: 1px solid #9b5de5;
+            border-radius: 1em;
+            padding: 0 0.4em;
+            margin: 0.4em 0.4em 0 0;
+
+            &:hover {
+                color: whitesmoke;
+                background-color: #9b5de5;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            grid-area: 3 / 1 / 4 / 2;
+            align-items: end;
+            justify-content: flex-start;
+            padding-top: 1em;
         }
     }
 }

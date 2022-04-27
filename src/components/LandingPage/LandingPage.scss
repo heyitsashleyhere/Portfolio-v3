@@ -1,11 +1,14 @@
 .LandingPage {
-    height: 88vh;
+    height: 85vh;
     padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     @media screen and (min-width: 768px) {
         padding: 5em;
+    }
+    @media screen and (min-width: 1020px) {
+        padding: 8em;
     }
     h1 {
         font-size: 1.5em;
@@ -68,5 +71,4 @@
             }
         }
     }
-
 }

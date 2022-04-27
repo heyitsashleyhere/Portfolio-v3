@@ -81,7 +81,7 @@ export default function Projects() {
                 </ul>
             </div>
 
-            <div className="project-wrapper">
+            <div className="odd-project-wrapper">
                 <motion.section className='title-wrapper'
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
