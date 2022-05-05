@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio-v3/static/css/main.199bd363.css",
-    "main.js": "/Portfolio-v3/static/js/main.5f775efc.js",
-    "static/media/Ashley_Jiang_CV.pdf": "/Portfolio-v3/static/media/Ashley_Jiang_CV.1a6a10f27505861f0e5b.pdf",
+    "main.js": "/Portfolio-v3/static/js/main.289ad7af.js",
+    "static/media/Ashley_Jiang_CV.pdf": "/Portfolio-v3/static/media/Ashley_Jiang_CV.4e1f84e6b7fdd09fba16.pdf",
     "static/media/mongodb.svg": "/Portfolio-v3/static/media/mongodb.452bfc77ef397456ac6393170227c033.svg",
     "static/media/sass.svg": "/Portfolio-v3/static/media/sass.8aa78a8393470431c8036541f0708bd7.svg",
     "static/media/postman.svg": "/Portfolio-v3/static/media/postman.5c8723ae695b8f4fba6e89f4471ca76e.svg",
@@ -27,10 +27,10 @@
     "static/media/jira.svg": "/Portfolio-v3/static/media/jira.4e6048fe9d07a5033bab028e103ab7e5.svg",
     "static/media/html.svg": "/Portfolio-v3/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg",
     "main.199bd363.css.map": "/Portfolio-v3/static/css/main.199bd363.css.map",
-    "main.5f775efc.js.map": "/Portfolio-v3/static/js/main.5f775efc.js.map"
+    "main.289ad7af.js.map": "/Portfolio-v3/static/js/main.289ad7af.js.map"
   },
   "entrypoints": [
     "static/css/main.199bd363.css",
-    "static/js/main.5f775efc.js"
+    "static/js/main.289ad7af.js"
   ]
 }
