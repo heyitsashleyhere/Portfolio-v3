@@ -1,6 +1,6 @@
-// import { useContext } from 'react';
+import { useContext } from 'react';
 // Context
-// import { LandingContext } from '../../contexts/LandingContext';
+import { LandingContext } from '../../contexts/LandingContext';
 // Styles
 import './Projects.scss';
 import { motion } from "framer-motion";
@@ -10,7 +10,7 @@ import {ReactComponent as ExternalLink} from '../../icons/square-arrow-up-right-
 
 
 export default function Projects() {
-    // const { isTheme } = useContext(LandingContext)
+    const { isTheme } = useContext(LandingContext)
 
     return (
         <section className="Projects">
@@ -141,6 +141,70 @@ export default function Projects() {
                 </ul>
 
             </div>
+
+            <div className="project-wrapper">
+                <motion.section className="title-wrapper"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 3.05}}>      
+                    <h4>To Do List</h4>
+
+                    <div className="links">
+                        <a href="https://github.com/heyitsashleyhere/TO_DO" rel="noreferrer" target="_blank">
+                            <GitHubSqr className='link-icon' />
+                        </a>
+                        <a href="https://heytheretodo.netlify.app/" rel="noreferrer" target="_blank">
+                            <ExternalLink className='link-icon' />
+                        </a>
+                    </div>
+                </motion.section>
+                
+                <motion.p initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 3.1}}>A simple serverless CRUD app created to get to know firebase and Chakra UI.</motion.p>
+
+                <motion.img src={process.env.PUBLIC_URL + "/images/todoapp.png"} alt="todo preview" 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 3.15}}/>
+
+                <ul className="tools-list">
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 3.2}}>React</motion.li>
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 3.25}}>Firebase</motion.li>
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 3.3}}>Chakra UI</motion.li>
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 3.35}}>Sass</motion.li>
+                </ul>
+            </div>
+
+            <motion.div className="github-wrapper"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 3.4}} >
+                <a href="https://github.com/heyitsashleyhere?tab=repositories"
+                   target="_blank"
+                   rel="noreferrer" 
+                   className={isTheme ? "light-btn" : "dark-btn"}>For more projects</a>      
+            </motion.div>
         </section>
     )
 }
