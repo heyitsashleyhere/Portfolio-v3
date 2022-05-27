@@ -48,6 +48,19 @@
             font-size: 0.8em;
             margin-bottom: 1em;
             text-align: justify;
+            a {
+                font-weight: 700;
+                color: #00bbf9;
+                &:hover {
+                    color: #f15bb5;
+                }
+                &:active {
+                    color: #fb7107;
+                }
+                &:visited {
+                    color: #9b5de5;
+                }
+            }
             @media screen and (min-width: 768px) {
                 font-size: 1em;
             }

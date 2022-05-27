@@ -39,7 +39,16 @@ export default function Projects() {
                 <motion.p initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 2.1}}>Ideas Come Together is a 3-4 days SPA team project. Users can register, login, comment, search , create private or public posts with text and images.</motion.p>
+                transition={{ delay: 2.1}}>Ideas Come Together is a 3-4 days SPA team project. Users can register, login, comment, search, create private or public posts with text and images. 
+                <div className='challenge-wrapper'>
+                    <p>Challenges:</p>
+                    <ul>
+                        <li>Taking the lead and manage the project</li>
+                        <li>Refactoring others code and version control</li>
+                        <li>Creating login and register components with authentication logic</li>
+                    </ul>
+                </div>
+               </motion.p>
 
                 <motion.img src={process.env.PUBLIC_URL + "/images/ict.png"} alt="ict preview" 
                 initial={{ opacity: 0 }}
@@ -109,7 +118,15 @@ export default function Projects() {
                 viewport={{ once: true }}
                 transition={{ delay: 2.55}}
                 href="https://devchallenges.io/" rel="noreferrer" target="_blank"
-                >devChallenges</motion.div>.</motion.p>
+                >devChallenges</motion.div>. Users can save their default location, check current weather and the up-coming 5 days. Add other locations. Toggle between celsius and fahrenheit.
+                <div className='challenge-wrapper'>
+                    <p>Challenges:</p>
+                    <ul>
+                        <li>Fetching data from a weather API</li>
+                        <li>Pixel perfect style according to a Figma file</li>
+                    </ul>
+                </div>
+                </motion.p>
                 
                 <motion.img src={process.env.PUBLIC_URL + "/images/weatherapp.png"} alt="weather app preview"
                 initial={{ opacity: 0 }}
@@ -163,7 +180,14 @@ export default function Projects() {
                 <motion.p initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 3.1}}>A simple serverless CRUD app created to get to know firebase and Chakra UI.</motion.p>
+                transition={{ delay: 3.1}}>2-3 day To-Do list app. Users can register, login and create, read, update and delete to-do tasks.
+                <div className='challenge-wrapper'>
+                    <p>Challenges:</p>
+                    <ul>
+                        <li>Teach myself on how to use Firebase and Chakra UI</li>
+                    </ul>
+                </div>
+                </motion.p>
 
                 <motion.img src={process.env.PUBLIC_URL + "/images/todoapp.png"} alt="todo preview" 
                 initial={{ opacity: 0 }}
@@ -193,6 +217,61 @@ export default function Projects() {
                     viewport={{ once: true }}
                     transition={{ delay: 3.35}}>Sass</motion.li>
                 </ul>
+            </div>
+
+            <div className="odd-project-wrapper">
+                <motion.section className='title-wrapper'
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 2.5}}>
+                    <h4>Dear Memories</h4>
+                    
+                    <div className="links">
+                        {/* <a href="https://github.com/heyitsashleyhere/Weatherapp-Devchallenge" rel="noreferrer" target="_blank">
+                            <GitHubSqr className='link-icon' />
+                        </a> */}
+                        <a href="https://github.com/heyitsashleyhere/DearMemories" rel="noreferrer" target="_blank">
+                            <ExternalLink className='link-icon' />
+                        </a>
+                    </div>
+                </motion.section>
+
+                <motion.p initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 2.55}}>🚨 ⚠️ This project is still in progress ⚠️ 🚨<br/>
+                Instagram wanna-be app. Users can register, login and create posts, edit posts, like posts and delete posts. Using MongoDB, Express, JWT and React. Would like to add more features such as comments, filters and search. Please refer to the README file in the github repository for a quick view of the project progress.</motion.p>
+                
+                <motion.img src={process.env.PUBLIC_URL + "/images/dearmemories.png"} alt="weather app preview"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 2.6}} />
+                
+                <ul className="tools-list">
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 2.65}}>React</motion.li>
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 2.7}}>OpenWeatherMap API</motion.li>
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 2.75}}>Material Design Icons</motion.li>
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 2.8}}>GitHub Pages</motion.li>
+                </ul>
+
             </div>
 
             <motion.div className="github-wrapper"

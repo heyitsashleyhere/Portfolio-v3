@@ -46,7 +46,7 @@ export default function AboutMe() {
           <motion.p initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 0.85}}>After moving to Germany, starting a family and COVID hitting the world, I started my web development journey in 2021.</motion.p>
+                    transition={{ delay: 0.85}}>I started my web development journey in 2021, when a realized coding is just like riding a roller coaster: up and down, fun and addicting! And this portfolio is created to showcase some of my projects and knowledge I have obtained during my MERN stack training program with <a href="https://digitalcareerinstitute.org/" target="_blank" rel="noreferrer">DCI</a>. Please feel free to stop by from time to time to see my progress.</motion.p>
           
           <motion.p initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
