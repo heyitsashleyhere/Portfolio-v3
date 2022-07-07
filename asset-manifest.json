@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-v3/static/css/main.f34baab7.css",
-    "main.js": "/Portfolio-v3/static/js/main.65ae7ff6.js",
+    "main.css": "/Portfolio-v3/static/css/main.58ad717f.css",
+    "main.js": "/Portfolio-v3/static/js/main.9ca068be.js",
     "static/media/Ashley_Jiang_CV.pdf": "/Portfolio-v3/static/media/Ashley_Jiang_CV.167ce4bf984ccb7a9cd3.pdf",
     "static/media/mongodb.svg": "/Portfolio-v3/static/media/mongodb.452bfc77ef397456ac6393170227c033.svg",
     "static/media/sass.svg": "/Portfolio-v3/static/media/sass.8aa78a8393470431c8036541f0708bd7.svg",
@@ -26,11 +26,11 @@
     "static/media/figma.svg": "/Portfolio-v3/static/media/figma.7ec53a4a5c6c13b7d459f072fc73adf1.svg",
     "static/media/jira.svg": "/Portfolio-v3/static/media/jira.4e6048fe9d07a5033bab028e103ab7e5.svg",
     "static/media/html.svg": "/Portfolio-v3/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg",
-    "main.f34baab7.css.map": "/Portfolio-v3/static/css/main.f34baab7.css.map",
-    "main.65ae7ff6.js.map": "/Portfolio-v3/static/js/main.65ae7ff6.js.map"
+    "main.58ad717f.css.map": "/Portfolio-v3/static/css/main.58ad717f.css.map",
+    "main.9ca068be.js.map": "/Portfolio-v3/static/js/main.9ca068be.js.map"
   },
   "entrypoints": [
-    "static/css/main.f34baab7.css",
-    "static/js/main.65ae7ff6.js"
+    "static/css/main.58ad717f.css",
+    "static/js/main.9ca068be.js"
   ]
 }
