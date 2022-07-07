@@ -51,14 +51,14 @@
             a {
                 font-weight: 700;
                 color: #00bbf9;
-                &:hover {
-                    color: #f15bb5;
-                }
                 &:active {
                     color: #fb7107;
                 }
                 &:visited {
                     color: #9b5de5;
+                }
+                &:hover {
+                    color: #f15bb5;
                 }
             }
             @media screen and (min-width: 768px) {

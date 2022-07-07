@@ -274,6 +274,87 @@ export default function Projects() {
 
             </div>
 
+            <div className="project-wrapper">
+                <motion.section className="title-wrapper"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 3.05}}>      
+                    <h4>Hyōgen</h4>
+
+                    <div className="links">
+                        <a href="https://github.com/heyitsashleyhere/InspirationJam-hyougen" rel="noreferrer" target="_blank">
+                            <GitHubSqr className='link-icon' />
+                        </a>
+                        <a href="https://inspiration-jam-hyougen.vercel.app/" rel="noreferrer" target="_blank">
+                            <ExternalLink className='link-icon' />
+                        </a>
+                    </div>
+                </motion.section>
+                
+                <motion.p initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 3.1}}>
+                <motion.div
+                className='p-link' 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 2.55}}
+                href="https://digitalcareerinstitute.org/" rel="noreferrer" target="_blank"
+                >DCI</motion.div>'s very own Hackathon: Inspiration Jam that took place from June 10th to June 12th, 2022. Each team is tasked to create a website for an agency that specializes in Marketing and Web Development. Details on what it needs to includes are stated in the project github repository.
+                <div className='extra-notes-wrapper'>
+                    <img src={process.env.PUBLIC_URL + "/images/inspirationJamBadge.png"} alt="honorable mention badge" 
+                    style={{width: '30%'}}/>
+                    <p>Winning Honorable Mention and <motion.div
+                        className='p-link' 
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 2.55}}
+                        href="https://www.behance.net/videos/fb6b5ace-21ea-4ed4-b954-110495e92601/Meet-the-Students-at-the-Digital-Career-Institute-Inspiration-Jam" rel="noreferrer" target="_blank"
+                        >here is a recording of the event live-stream</motion.div> and if you would like to see the actual presentation recording please request by email, thank you.</p>
+                </div>
+                <div className='challenge-wrapper'>
+                    <p>Challenges:</p>
+                    <ul>
+                        <li>First time working with online marketers and understanding their demands</li>
+                        <li>Surviving the pressure when other team members drop out</li>
+                    </ul>
+                </div>
+                </motion.p>
+
+                <motion.img src={process.env.PUBLIC_URL + "/images/hyougen.png"} alt="todo preview" 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 3.15}}/>
+
+                <ul className="tools-list">
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 3.2}}>React</motion.li>
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 3.25}}>Material UI</motion.li>
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 3.3}}>Framer Motion</motion.li>
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 3.35}}>Swiper JS</motion.li>
+                </ul>
+            </div>
+
             <motion.div className="github-wrapper"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
