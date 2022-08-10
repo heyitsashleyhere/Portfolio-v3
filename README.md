@@ -15,7 +15,7 @@
 
 Built a simple personal website to showcase my growth as a web-developer from the start of my journey in 2021. This is my third iteration I build in 2022. Please feel free to reach out to my and give me feedbacks :) 
 
-![demo](./src/resume/newNewDemo.gif)
+<!-- ![demo](./src/resume/newNewDemo.gif) -->
 
 
 ## 🛠 Installation & Set Up
