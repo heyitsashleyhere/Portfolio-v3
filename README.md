@@ -17,6 +17,8 @@ Built a simple personal website to showcase my growth as a web-developer from th
 
 <!-- ![demo](./src/resume/newNewDemo.gif) -->
 
+https://user-images.githubusercontent.com/84905549/184022127-27df1f0b-bfb2-488f-9cb0-07f2e485cea3.mp4
+
 
 ## 🛠 Installation & Set Up
 
