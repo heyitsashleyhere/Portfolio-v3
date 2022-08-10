@@ -2,6 +2,10 @@ import { useContext } from "react";
 // Icons:
 import {ReactComponent as HtmlLogo} from '../../icons/html.svg';
 import {ReactComponent as CssLogo} from '../../icons/css3.svg';
+import {ReactComponent as NodeJSLogo} from '../../icons/node-js.svg';
+import {ReactComponent as FirebaseLogo} from '../../icons/firebase.svg';
+import {ReactComponent as MUILogo} from '../../icons/material.svg';
+import {ReactComponent as FramerLogo} from '../../icons/framer.svg';
 import {ReactComponent as SassLogo} from '../../icons/sass.svg';
 import {ReactComponent as BootstrapLogo} from '../../icons/bootstrap-brands.svg';
 import {ReactComponent as JSLogo} from '../../icons/javascript.svg';
@@ -82,29 +86,11 @@ export default function AboutMe() {
             <p className="icon-text">CSS</p>
         </motion.div>
         
-        <motion.div className="sass-wrapper" 
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1 , y: 0}}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 1.35 }} >
-            <SassLogo className="sass icon" />
-            <p className="icon-text">Sass</p>
-        </motion.div>
-
-        <motion.div className="bootstrap-wrapper"
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1 , y: 0}}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 1.45 }} >
-            <BootstrapLogo className="bootstrap icon" fill="#7853B2" stroke="#7853B2"/>
-            <p className="icon-text">Bootstrap</p>
-        </motion.div>
-
         <motion.div className="js-wrapper" 
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 1.55 }} >
+                    transition={{ duration: 0.25, delay: 1.35 }} >
             <JSLogo className="js icon" />
             <p className="icon-text">Javascript</p>
         </motion.div>
@@ -113,27 +99,45 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 1.65 }} >
+                    transition={{ duration: 0.25, delay: 1.45 }} >
             <ReactLogo className="react icon" />
             <p className="icon-text">React</p>
+        </motion.div>
+
+        <motion.div className="nodejs-wrapper"
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1 , y: 0}}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.25, delay: 1.55 }} >
+            <NodeJSLogo className="nodejs icon"/>
+            <p className="icon-text">Node JS</p>
         </motion.div>
 
         <motion.div className="express-wrapper" 
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 1.75 }} >
+                    transition={{ duration: 0.25, delay: 1.65 }} >
             <ExpressLogo className="express icon" fill={isTheme? "black" : "#FFFFFF"} stroke={isTheme? "black" : "#FFFFFF"}/>
-            <p className="icon-text">express</p>
+            <p className="icon-text">Express</p>
         </motion.div>
 
         <motion.div className="mongo-wrapper" 
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 1.85 }} >
+                    transition={{ duration: 0.25, delay: 1.75 }} >
             <MongoLogo className="mongo icon" />
             <p className="icon-text">MongoDB</p>
+        </motion.div>
+
+        <motion.div className="firebase-wrapper" 
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1 , y: 0}}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.25, delay: 1.85 }} >
+            <FirebaseLogo className="firebase icon" />
+            <p className="icon-text">Firebase</p>
         </motion.div>
 
         <motion.div className="postman-wrapper" 
@@ -145,20 +149,56 @@ export default function AboutMe() {
             <p className="icon-text">Postman</p>
         </motion.div>
 
-        <motion.div className="figma-wrapper" 
+        <motion.div className="sass-wrapper" 
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1 , y: 0}}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.25, delay: 2 }} >
+            <SassLogo className="sass icon" />
+            <p className="icon-text">Sass</p>
+        </motion.div>
+
+        <motion.div className="bootstrap-wrapper"
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
                     transition={{ duration: 0.25, delay: 2.05 }} >
+            <BootstrapLogo className="bootstrap icon" fill="#7853B2" stroke="#7853B2"/>
+            <p className="icon-text">Bootstrap</p>
+        </motion.div>
+
+        <motion.div className="mui-wrapper" 
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1 , y: 0}}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.25, delay: 2.1 }} >
+            <MUILogo className="mui icon" />
+            <p className="icon-text">Material UI</p>
+        </motion.div>
+
+        <motion.div className="framer-wrapper" 
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1 , y: 0}}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.25, delay: 2.15 }} >
+            <FramerLogo className="framer icon" />
+            <p className="icon-text">Framer Motion</p>
+        </motion.div>
+
+        <motion.div className="figma-wrapper" 
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1 , y: 0}}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.25, delay: 2.2 }} >
             <FigmaLogo className="figma icon" />
-            <p className="icon-text">figma</p>
+            <p className="icon-text">Figma</p>
         </motion.div>
 
         <motion.div className="jira-wrapper"
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 2.15 }} >
+                    transition={{ duration: 0.25, delay: 2.25 }} >
             <JiraLogo className="jira icon" />
             <p className="icon-text">Jira</p>
         </motion.div>
@@ -167,7 +207,7 @@ export default function AboutMe() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1 , y: 0}}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.25, delay: 2.25 }} >
+                    transition={{ duration: 0.25, delay: 2.3 }} >
             <GithubLogo className="github icon" fill={isTheme? "black" : "#FFFFFF"}/>
             <p className="icon-text">GitHub</p>
         </motion.div>

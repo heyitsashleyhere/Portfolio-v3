@@ -111,14 +111,13 @@ export default function Projects() {
                 <motion.p initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 2.55}}>2-3 day responsive frontend challenge from <motion.div
+                transition={{ delay: 2.55}}>2-3 day responsive frontend challenge from <a
+                style={{ color: '#00bbf9', textDecoration: 'none', fontWeight: 500,
+                '&:active': { color: '#fb7107'}, '&visited': { color: '#9b5de5' }, '&hover': { color: '#f15bb5' }
+                }}
                 className='p-link' 
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 2.55}}
                 href="https://devchallenges.io/" rel="noreferrer" target="_blank"
-                >devChallenges</motion.div>. Users can save their default location, check current weather and the up-coming 5 days. Add other locations. Toggle between celsius and fahrenheit.
+                >devChallenges</a>. Users can save their default location, check current weather and the up-coming 5 days. Add other locations. Toggle between celsius and fahrenheit.
                 <div className='challenge-wrapper'>
                     <p>Challenges:</p>
                     <ul>
@@ -228,12 +227,12 @@ export default function Projects() {
                     <h4>Dear Memories</h4>
                     
                     <div className="links">
-                        {/* <a href="https://github.com/heyitsashleyhere/Weatherapp-Devchallenge" rel="noreferrer" target="_blank">
-                            <GitHubSqr className='link-icon' />
-                        </a> */}
                         <a href="https://github.com/heyitsashleyhere/DearMemories" rel="noreferrer" target="_blank">
-                            <ExternalLink className='link-icon' />
+                            <GitHubSqr className='link-icon' />
                         </a>
+                        {/* <a href="https://github.com/heyitsashleyhere/DearMemories" rel="noreferrer" target="_blank">
+                            <ExternalLink className='link-icon' />
+                        </a> */}
                     </div>
                 </motion.section>
 
@@ -296,14 +295,12 @@ export default function Projects() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 3.1}}>
-                <motion.div
+                <a style={{ color: '#00bbf9', textDecoration: 'none', fontWeight: 500,
+                '&:active': { color: '#fb7107'}, '&visited': { color: '#9b5de5' }, '&hover': { color: '#f15bb5' }
+                }}
                 className='p-link' 
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 2.55}}
                 href="https://digitalcareerinstitute.org/" rel="noreferrer" target="_blank"
-                >DCI</motion.div>'s very own Hackathon: Inspiration Jam that took place from June 10th to June 12th, 2022. Each team is tasked to create a website for an agency that specializes in Marketing and Web Development. Details on what it needs to includes are stated in the project github repository.
+                >DCI</a>'s very own Hackathon: Inspiration Jam that took place from June 10th to June 12th, 2022. Each team is tasked to create a website for an agency that specializes in Marketing and Web Development. Details on what it needs to includes are stated in the project github repository.
                 <div className='extra-notes-wrapper'>
                     <img src={process.env.PUBLIC_URL + "/images/inspirationJamBadge.png"} alt="honorable mention badge" 
                     style={{width: '30%'}}/>
@@ -355,7 +352,156 @@ export default function Projects() {
                 </ul>
             </div>
 
-            <motion.div className="github-wrapper"
+            <div className="odd-project-wrapper">
+                <motion.section className='title-wrapper'
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 2.5}}>
+                    <h4>LOKA</h4>
+                    
+                    <div className="links">
+                        <a href="https://github.com/heyitsashleyhere/BAIM_frontend" rel="noreferrer" target="_blank">
+                            <GitHubSqr className='link-icon' />
+                        </a>
+                        <a href="https://loka.vercel.app/" rel="noreferrer" target="_blank">
+                            <ExternalLink className='link-icon' />
+                        </a>
+                    </div>
+                </motion.section>
+
+                <motion.p initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 2.55}}>
+                This is my final project working in a team of four to showcase all we learned in our one year fullstack web developer course at <a style={{ color: '#00bbf9', textDecoration: 'none', fontWeight: 500,
+                '&:active': { color: '#fb7107'}, '&visited': { color: '#9b5de5' }, '&hover': { color: '#f15bb5' }
+                }}
+                className='p-link' 
+                href="https://digitalcareerinstitute.org/" rel="noreferrer" target="_blank"
+                >DCI</a>. Was a 7 week project where the client can see what are the seasonal produces in Germany; are able to create, edit, comment and pin posts, attend events and follow other users.
+                
+                <div className='challenge-wrapper'>
+                    <p>Challenges:</p>
+                    <ul>
+                        <li>Creating 2 APIs for the app</li>
+                        <li>Using cookies</li>
+                        <li>Data flow and work flow</li>
+                        <li>Consistency in our codes</li>
+                    </ul>
+                </div>
+                
+                </motion.p>
+                
+                <motion.img src={process.env.PUBLIC_URL + "/images/loka.png"} alt="weather app preview"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 2.6}} />
+                
+                <ul className="tools-list">
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 2.65}}>React</motion.li>
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 2.7}}>Express</motion.li>
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 2.75}}>MongoDB</motion.li>
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 2.85}}>Firebase</motion.li>
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 2.8}}>GSAP</motion.li>
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 2.85}}>MUI</motion.li>
+                </ul>
+            </div>
+
+            <div className="project-wrapper">
+                <motion.section className="title-wrapper"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 3.05}}>      
+                    <h4>CSD-BERLIN</h4>
+
+                    <div className="links">
+                        <a href="https://github.com/heyitsashleyhere/CSD-BERLIN" rel="noreferrer" target="_blank">
+                            <GitHubSqr className='link-icon' />
+                        </a>
+                        <a href="https://csd.digitalcareerinstitute.org/" rel="noreferrer" target="_blank">
+                            <ExternalLink className='link-icon' />
+                        </a>
+                    </div>
+                </motion.section>
+                
+                <motion.p initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 3.1}}>
+                This project was built for 
+                <a style={{ color: '#00bbf9', textDecoration: 'none', fontWeight: 500,
+                '&:active': { color: '#fb7107'}, '&visited': { color: '#9b5de5' }, '&hover': { color: '#f15bb5' }
+                }}
+                className='p-link' 
+                href="https://digitalcareerinstitute.org/" rel="noreferrer" target="_blank"
+                >DCI</a>'s landing page for participating in the <a style={{ color: '#00bbf9', textDecoration: 'none', fontWeight: 500,
+                '&:active': { color: '#fb7107'}, '&visited': { color: '#9b5de5' }, '&hover': { color: '#f15bb5' }
+                }}
+                className='p-link' 
+                href="https://csd-berlin.de/" rel="noreferrer" target="_blank"
+                >Christophor Street Day - Berlin Pride</a> on 23th July, 2022.
+                <div className='challenge-wrapper'>
+                    <p>Challenges:</p>
+                    <ul>
+                        <li>Short time frame to built a site following corporate Design guidelines</li>
+                        <li>Sticking to pure HTML, CSS/SaSS, Javascript and reading other developers codes</li>
+                    </ul>
+                </div>
+                </motion.p>
+
+                <motion.img src={process.env.PUBLIC_URL + "/images/csd.png"} alt="todo preview" 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 3.15}}/>
+
+                <ul className="tools-list">
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 3.2}}>HTML</motion.li>
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 3.25}}>SaSS</motion.li>
+                    <motion.li
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 3.3}}>Javascript</motion.li>
+                </ul>
+            </div>
+
+            {/* <motion.div className="github-wrapper"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}
@@ -364,7 +510,7 @@ export default function Projects() {
                    target="_blank"
                    rel="noreferrer" 
                    className={isTheme ? "light-btn" : "dark-btn"}>For more projects</a>      
-            </motion.div>
+            </motion.div> */}
         </section>
     )
 }

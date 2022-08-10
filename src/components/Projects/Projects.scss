@@ -101,14 +101,14 @@
             }
 
             .p-link {
-                display: inline-block;
-                color: #00bbf9;
-                &:hover,
-                &:visited,
                 &:active {
-                    text-decoration: none;
-                    background-color: #00bbf9;
-                    color: whitesmoke;
+                    color: #fb7107;
+                }
+                &:visited {
+                    color: #9b5de5;
+                }
+                &:hover {
+                    color: #f15bb5;
                 }
             }
         }
@@ -271,7 +271,7 @@
     justify-content: center;
     align-items: center;
     a {
-        width: 30%;
+        width: 55%;
         height: 4rem;
         border: 1px solid #9b5de5;
         background-color: #9a5de588;
@@ -284,7 +284,7 @@
         text-decoration: none;
 
         @media screen and (min-width: 768px) {
-            font-size: 1.6em;
+            font-size: 1.4em;
             width: 40%;
         }
 
